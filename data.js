@@ -1,15 +1,24 @@
-// ─────────────────────────────────────────────────────────────
-// YOUR DATA GOES HERE.
+// SOURCE: accountability-indicators.csv, row 208 (2026-27 ACT Budget)
+// Statement C, CANBERRA HEALTH SERVICES, Table 16, "Accountability Indicators Output 1.1"
+// Raw row: Percentage of emergency department presentations whose length of
+// stay in the emergency department is four hours or less,81,57,81
+// (source text carried a footnote marker "1" glued to "less" - removed below,
+// it refers to a footnote, not a fourth number)
 //
-// This file sets one global, window.DATA, and index.html reads it.
-// It's loaded with a plain <script> tag rather than fetch(), so the
-// page works when you open it locally AND when it's on GitHub Pages.
-//
-// Replace this array with the data you extracted. Keep a comment at
-// the top saying exactly which table it came from, so anyone reading
-// your repo can check your numbers.
-//
-// Source: [NAME THE TABLE AND STATEMENT HERE]
-// ─────────────────────────────────────────────────────────────
+// Every number below is copied verbatim from that one row. Nothing here is
+// estimated, calculated from other rows, or invented.
 
-window.DATA = [];
+const ED_WAIT_DATA = {
+  indicator: "Percentage of emergency department presentations whose length of stay in the emergency department is four hours or less",
+  target_2025_26: 81,
+  outcome_2025_26: 57,
+  target_2026_27: 81,
+  source: {
+    file: "accountability-indicators.csv",
+    row: 208,
+    statement: "Statement C",
+    agency: "CANBERRA HEALTH SERVICES",
+    table: 16,
+    caption: "Accountability Indicators Output 1.1"
+  }
+};
